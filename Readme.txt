@@ -3,6 +3,23 @@ An example C program that traces shifts and reduces of given input with GNU Biso
 S -> E
 E -> E + E | -E | id
 
+> Example Output
+
+Shift token id
+Reduce stack by rule E --> id
+Shift token +
+Shift token -
+Shift token id
+Reduce stack by rule E --> id
+Reduce stack by rule E --> -E
+Reduce stack by rule E --> E + E
+Shift token +
+Shift token id
+Reduce stack by rule E --> id
+Reduce stack by rule E --> E + E
+Reduce stack by rule S --> E
+Pop S
+
 -----------------------------------------------------
 
 > How to disable colored output?
